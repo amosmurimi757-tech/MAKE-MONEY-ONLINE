@@ -1,0 +1,31 @@
+# robots.txt - Search Engine Crawler Directives
+
+# Allow all robots to crawl the site
+User-agent: *
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Prevent crawling of common sensitive directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /*.pdf$
+
+# Crawl delay for robots (in seconds)
+Crawl-delay: 1
+
+# Add specific rules for Googlebot (optional)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Add specific rules for other bots
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow bad bots
+User-agent: MJ12bot
+Disallow: /
